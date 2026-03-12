@@ -1,0 +1,21 @@
++ cmd komutunda " sqlplus / as sysdba " yazarak sql 'i cmd komutu üzerinden açabiliriz.
+
++ ardından " show user " diyerek bağlandığımız kişinin ismini görebiliriz.
+
+! cmd üzerinden yapılan komut ifadelerinde büyük küçük harf hasassiyeti yoktur !
+
++ "exit" yaparak cmd komutu üzerinden sql ' den çıkış yapabiliriz
+
++ "sqlplus SYS/SYS as sysdba" diyerek SYS kişisini SYS parolası verilerek bir bağlantı gerçekleşti
+
++ "sqlplus SYSTEM/SYS as sysdba" diyerek de system kullanıcısının SYS parolası ile bir bağlantı gerçekleştirdik
+
++ " select name from v$database; " diyerek database ismini öğrenebiliriz
+
++" SELECT GLOBAL_NAME FROM GLOBAL_NAME " diyerek de global name ismini cmd den öğrenebiliriz.
+
+
+
+
+
+
