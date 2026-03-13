@@ -1,0 +1,2 @@
++"CREATE USER FERHAT IDENTIFIED BY GUDEK;" ile direkt kullanıcıyı oluşturduk
++" GRANT RESOURCE, CONNECT, UNLIMITED TABLESPACE TO FERHAT;" ile de yetkilerimizi vermiş olduk

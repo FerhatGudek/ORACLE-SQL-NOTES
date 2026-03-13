@@ -1,0 +1,19 @@
+& öncelikle sqlplus şeklinde giriş yapıyoruz ve sql ve cmd üzerinden giriyoruz iki türlü gösterim yapılacak
++ yeni bir kişi yetkilendirmek için yapılacak örnek durum örneğin ferhat güdek'i yetkilendirelim
++ CREATE USER FERHAT IDENTIFIED BY GUDEK = Ferhat adında bir kullanıcı ve gudek olarak şifre atar
++DEFAULT TABLESPACE USERS
++TEMPORARY TABLESPACE TEMP
++PASSWORD EXPIRE
+;
++ bu şekilde yetkilendirme işlemi yapılır ancak bu kullanıcının daha yetkisi yok işlem yapabilmek için öncelikle bu kullan
+ıcıya yetki vermek gerekir
++ GRANT CONNECT, RESOURCE TO FERHAT ; = FERHAT  kullanıcısına bağlantı ve kaynak yetkisi verildi
++ daha sonra şifre yenileme isticek parola süresi dolduğu için bunun için de CONNECT FERHAT/GUDEK diyerek yeni şifre
+oluşturma kısmı gelecek ve girdiğimiz yeni şifre ile yenileyip tekrar girdiğimizde sunucuya FERHAT adlı kullanıcıyı tanıtmış
+oluruz
++ "GRANT UNLIMITED TABLESPACE TO FERHAT" şeklinde ferhat kullanıcısına tablomalamada yetki verebiliriz
++" CLEAR SCREEN" ile ekranı temizleriz
++" REVOKE CONNECT FROM FERHAT; " diyerek ferhat kullanıcısından aldığımız bağlantı yetkisini geri alırız ama yetki 
+varken işleme başladığı için oturum sonlanana kadar her türlü işlemi yapabilir oturum sonunda yetkisi alınmış olur
++ " DROP USER CASCADE;" ile nesnesiyle birlikte kullanıcı drop edilir ancak kullanıcının disconnect olması gerekir.
+& Drop yedikten sonra kullanıcı şifresini girmesi dahilinde bile bağlanamayacaktır. yani drop komutu kullanıcı siliyor.
