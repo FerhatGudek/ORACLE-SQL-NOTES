@@ -1,0 +1,16 @@
++ öncelikle sqlplus SYS/SYS as sysdba ile sql e giriş yaptık
++ ardınan CONNECT FERHAT/GUDEK; ile önceden oluşturulan kullanıcı tarafına bağlandık
++ bir tablo oluşturmak için "CREATE TABLE PERSONEL" şeklinde oluşturduk
++ CREATE TABLE PERSONEL (
+2 PERSONEL_ID NUMBER,
+3 FIRST_NAME CHAR(30),
+4 LAST_NAME VARCHAR2(30),
+5 JOB_TITLE VARCHAR(15),
+6 YEAR_OF_EXPERIENCE INTERVAL YEAR TO MONTH,
+7 FLIGHT_TIME INTERVAL DAY TO SECOND,
+8 APPROVAL_DATE TIMESTAMP,
+9 HIRE_DATE DATE,
+10 PRIMARY KEY (PERSONEL_ID)
+);
++ şeklinde tablomuz oluşturuldu ve oluşturulan tabloya "DESC PERSONEL" diyerek özetini kontrol etmiş oluruz.
+
