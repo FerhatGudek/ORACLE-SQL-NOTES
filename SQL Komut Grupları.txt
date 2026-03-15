@@ -1,0 +1,22 @@
+Nesne obje işlemleri (DDL) Data Definition Language
+1) CREATE = Tablo oluşturmak oluşturmak üzerine.
+2) ALTER = Değişim yapmak için kullanılır.
+3) DROP = Silmek için kullanılır.
+
+Veri İşlemleri (DML) Data Manupilation Language
+1)SELECT = Çağırım işlemlerinde kullanılır.
+2)INSERT = Ekleme işlemlerinde kullanılır.
+3)UPTADE = Güncelleme işlemlerinde kullanılır.
+4)DELETE = Veri üzerinde silme işlemlerinde kullanılır.
+
+Yetki , Privelege İşemleri (DCL) Data Control Langugage
+1) GRANT = Yetki verilirken kullanılır.
+2)REVOKE = Yetki alırken kullanılır.
+
+İşlem( Transaction) İşlemleri
+1) COMMIT = DML işlemlerini sisteme kalıcı olarak işlemek için kullanlır.
+2) ROLLBACK = Henüz commit olmamış yani kalıcı kaydedilmemiş işlemleri iptal etmek, eski haline çevirmek için kullanılır.
+
++ DML işlemlerini sisteme kalıcı olarak iki şekilde yapabiliriz öncelikle commit dersek siteme kalıcı kaydolmuş olur
+ya da DML 'den sonra DDL işlemi yapılırsa da sisteme kalıcı olarak kayıt oluşturulmuş olur yani DDL , DML'i otomatik 
+olarak commit eder. 
