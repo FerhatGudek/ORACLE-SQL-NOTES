@@ -1,0 +1,6 @@
++ örneğin 
+ALTER TABLE DEPARTMENTS DROP CONSTRAINT dept_man_id; diyerek bir constraint'i silebiliriz.
+DROP TABLE REGIONS CASCADE CONSTRAINTS; diyerek de regıons tablosunu silebiliriz cascade dememizin sebebi
+oluşturduğumuz primary ve foreign keylerden dolayıdır.
++ Örneğin Ferhat kullanıcısının tüm faaliyetlerini kaldırmak için ise DROP USER FERHAT CASCADE; diyerek
+tüm faaliyetlerini kaldırabiliriz ancak tabi ki kullanıcının disconnect olması gerekmektedir.
